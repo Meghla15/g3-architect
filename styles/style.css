@@ -108,6 +108,14 @@ line-height: 26px;
 .quick-list-content{
 
 }
+.boxes{
+    display: flex;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid chocolate;
+}
 
 
 /* Responsive Media Query  */
