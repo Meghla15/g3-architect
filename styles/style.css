@@ -52,6 +52,9 @@ text-align: center;
 font-size: 18px;
 line-height: 26px;
 }
+main{
+    max-width: 1440px;
+}
 
 .banner-contact{
      max-width: 700px; 
@@ -72,11 +75,11 @@ line-height: 26px;
     max-width: 1000px;
     padding: 10px 10px 20px 50px; 
   
-}
+} 
 .quick-list{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
     margin-top: 30px;
    
 }
@@ -96,8 +99,8 @@ line-height: 26px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 50px 80px;
+    
    
 }
 .img-section img{
@@ -105,23 +108,68 @@ line-height: 26px;
     height: 220px;
 
 }
-.quick-list-content{
-
+.some-facts{
+    max-width: 1000px;
+    margin: 90px auto;
+}
+.some-facts h3, p{
+    margin-bottom: 20px;
+}
+.some-facts h3{
+font-size: 45px;
+font-weight: 700;
+}
+.some-facts p{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 540px;
 }
 .boxes{
     display: flex;
+    gap: 80px;
+    justify-content: space-around;
+    margin-top: 35px;
 }
 .box{
+   align-items: center;
     width: 150px;
     height: 150px;
     border: 1px solid chocolate;
+    border-radius: 8px;
+    /* padding: 20px 40px; */
 }
+.img{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 10px 260px;
 
+}
+.image img{
+    width: 80px;
+    height: 40px;
+}
+.sponspors{
+    text-align: center;
+}
+.sponspors h3{
+font-size: 45px;
+font-weight: 700;
+}
+.sponspors p{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+}
 
 /* Responsive Media Query  */
   /* Mobile devices  */
 @media screen and (max-width:576px) {
-    nav, nav ul, .quick-list{
+    nav, nav ul, .quick-list, .img{
         flex-direction: column;
     }
    
@@ -144,9 +192,29 @@ line-height: 26px;
         text-align: center;
         margin-top: 20px;
     }
+    .some-facts{
+        padding: 20px;
+    }
+    .some-facts h3{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .some-facts p{
+        width: auto;
+        text-align: center;
+    }
+    .boxes{
+        gap: 20px;
+        align-items: center;
+    }
+    .image img{
+        width:100px ;
+        height: 50px;
+    }
 }
 
-/* Tablet devices  */
+/* Tablet devices 
 @media screen and (min-width:577px) and (max-width:992px) {
     
-}
+} */
